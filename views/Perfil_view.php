@@ -23,6 +23,6 @@
 
     <?php endif; ?>
 
-    <a href="/Projeto-Final/public/Home">Voltar para home</a>
+    <a href="/PROJETO-FINAL-CLINICA/public/Home">Voltar para home</a>
 </body>
 </html>

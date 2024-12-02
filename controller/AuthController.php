@@ -13,7 +13,7 @@ class AuthController {
 
         $auth = new AuthModel();
         if ($auth->login($email, $senha)) {
-            header('Location: /Projeto-Final/public/Home');
+            header('Location: /PROJETO-FINAL-CLINICA/public/Home');
         } else {
             echo "E-mail ou senha incorretos!";
         }
@@ -22,6 +22,6 @@ class AuthController {
     public function logoutUser() {
         session_start();
         session_destroy();
-        header('Location: /Projeto-Final/public/login');
+        header('Location: /PROJETO-FINAL-CLINICA/public/login');
     }
 }

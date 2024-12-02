@@ -72,39 +72,39 @@ $controller = new UserController();
 
 // Roteamento com base na URL
 switch (true) {
-    case ($request === '/Projeto-Final/public/'):
+    case ($request === '/PROJETO-FINAL-CLINICA/public/'):
         // Página inicial (formulário de cadastro ou login)
         $controller->showForm();
         break;
     
-    case ($request === '/Projeto-Final/public/save-users'):
+    case ($request === '/PROJETO-FINAL-CLINICA/public/save-users'):
         // Salvar usuário após o cadastro
         $controller->saveUser();
         break;
     
-    case ($request === '/Projeto-Final/public/Home'):
+    case ($request === '/PROJETO-FINAL-CLINICA/public/Home'):
         // Página inicial após login
         $controller->HomePage();
         break;
     
-    case ($request === '/Projeto-Final/public/Users'):
+    case ($request === '/PROJETO-FINAL-CLINICA/public/Users'):
         // Listagem de usuários
         $controller->listUsers();
         break;
 
     // Rota de atualização de usuário (dinâmica) - exibe o formulário de edição
-    case preg_match('/^\/Projeto-Final\/public\/update-user\/(\d+)$/', $request, $matches):
+    case preg_match('/^\/PROJETO-FINAL-CLINICA\/public\/update-user\/(\d+)$/', $request, $matches):
         $id = $matches[1];  // Captura o ID do usuário da URL
         $controller->showUpdateForm($id);  // Exibe o formulário de edição
         break;
 
     // Rota para realizar a atualização do usuário (POST)
-    case ($request === '/Projeto-Final/public/update-user'):
+    case ($request === '/PROJETO-FINAL-CLINICA/public/update-user'):
         $controller->updateUser();  // Chama o método que atualiza o usuário
         break;
 
     // Rota de exclusão de usuário (dinâmica) - excluir usuário
-    case preg_match('/^\/Projeto-Final\/public\/delete-user\/(\d+)$/', $request, $matches):
+    case preg_match('/^\/PROJETO-FINAL-CLINICA\/public\/delete-user\/(\d+)$/', $request, $matches):
         $id = $matches[1];  // Captura o ID do usuário da URL
         $controller->deleteUser($id);  // Exclui o usuário
         break;

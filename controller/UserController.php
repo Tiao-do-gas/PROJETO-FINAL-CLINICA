@@ -15,7 +15,7 @@ class UserController {
   
 
     public function saveUser() {
-        $id = $_POST['id'];
+     
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $cpf = $_POST['cpf'];
@@ -24,7 +24,7 @@ class UserController {
 
         
         $user = new Users();
-        $user->id = $id;
+        
         $user->nome = $nome;
         $user->email = $email;
         $user->cpf = $cpf;
@@ -34,7 +34,7 @@ class UserController {
        
         if ($user->save()) {
            
-            header('Location: /Projeto-Final/public/Home');
+            header('Location: /PROJETO-FINAL-CLINICA/public/Home');
         } else {
             echo "Erro ao cadastrar!";
         }
@@ -74,7 +74,7 @@ class UserController {
     public function deleteUser($id) {
         $userModel = new Users();
         if ($userModel->deleteById($id)) {
-            header('Location: /Projeto-Final/public/Users');
+            header('Location: /PROJETO-FINAL-CLINICA/public/Users');
         } else {
             echo "Erro ao excluir o usuário.";
         }
@@ -128,7 +128,7 @@ class UserController {
             // Verifique se as senhas correspondem
             if ($_POST['senha'] === $_POST['confirmar_senha']) {
                 if ($user->update()) {
-                    header('Location: /Projeto-Final/public/Users');
+                    header('Location: /PROJETO-FINAL-CLINICA/public/Users');
                 } else {
                     echo "Erro ao atualizar as informações!";
                 }

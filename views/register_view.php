@@ -14,7 +14,7 @@
         <div class="right">
             <h1>Bem-Vindo</h1>
             <p>Faça o cadastro para continuar</p>
-            <form method="post" action="/Projeto-Final/public/save-users">
+            <form method="post" action="/PROJETO-FINAL-CLINICA/public/save-users">
                 <div class="input-group">
                     <img src="imagens/image6.png" alt="Ícone de usuário" class="icon user-icon">
                     <input type="text" name="nome" placeholder="Nome completo" required>

@@ -32,11 +32,11 @@
                 <td><?= htmlspecialchars($user['cpf']); ?></td>
                 <td><?= htmlspecialchars($user['endereco']); ?></td>
                 <td>
-                    <form action="/Projeto-Final/public/update-user/<?= $user['id']; ?>" method="post" style="display:inline;">
+                    <form action="/PROJETO-FINAL-CLINICA/public/update-user/<?= $user['id']; ?>" method="post" style="display:inline;">
                         <input type="hidden" name="id" value="<?= $user['id']; ?>">
                         <button class="btn editar">Editar</button>
                     </form>
-                    <a href="/Projeto-Final/public/delete-user/<?= $user['id']; ?>" class="btn cancelar">Excluir</a>
+                    <a href="/PROJETO-FINAL-CLINICA/public/delete-user/<?= $user['id']; ?>" class="btn cancelar">Excluir</a>
                 </td>
             </tr>
         <?php endforeach; ?>

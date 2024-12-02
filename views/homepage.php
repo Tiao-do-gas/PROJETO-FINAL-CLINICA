@@ -9,14 +9,14 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="imagens/SP Medical Group.png" alt="Logo SP Medical Group">
+            <img src="/PROJETO-FINAL-CLINICA/views/imagens/SP Medical Group.png" alt="Logo SP Medical Group">
             <h2>SP MEDICAL GROUP</h2>
         </div>
         <nav class="navbar">
             <a href="#about">Sobre Nós</a>
             <a href="#services">Serviços</a>
             <a href="#contact">Contato</a>
-            <a href="/Projeto-Final/public/Users" class="btn-login">Usuários</a>
+            <a href="/PROJETO-FINAL-CLINICA/public/Users" class="btn-login">Usuários</a>
         </nav>
     </header>
     
