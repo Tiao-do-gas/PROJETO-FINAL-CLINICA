@@ -19,7 +19,7 @@
     <input type="hidden" name="id" value="<?= $user['id']; ?>">
 
             <div class="input-group">
-                <img src="imagens/image 6.png" alt="Ícone de usuário" class="icon user-icon">
+                <img src="/PROJETO-FINAL-CLINICA/views/sem_login/imagens/image6.png" alt="Ícone de usuário" class="icon user-icon">
                 <input type="text" name="nome" value="<?= $user['nome']; ?>" placeholder="Nome completo" required>
             </div>
 
