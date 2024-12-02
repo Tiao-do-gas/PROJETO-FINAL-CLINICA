@@ -24,12 +24,12 @@
             </div>
 
             <div class="input-group">
-                <img src="imagens/image 6.png" alt="Ícone de usuário" class="icon user-icon">
+                <img src="imagens/image6.png" alt="Ícone de usuário" class="icon user-icon">
                 <input type="email" name="email" value="<?= $user['email']; ?>" placeholder="Email" required>
             </div>
 
             <div class="input-group">
-                <img src="imagens/image 7.png" alt="Ícone de chave" class="icon key-icon">
+                <img src="imagens/image7.png" alt="Ícone de chave" class="icon key-icon">
                 <input type="password" name="senha" placeholder="Nova senha" required>
             </div>
 
